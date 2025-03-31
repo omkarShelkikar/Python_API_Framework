@@ -1,0 +1,29 @@
+INFO     API_Framework:test_api_all_requests.py:22 Sending POST request to login endpoint
+INFO     API_Framework:test_api_all_requests.py:26 Response status code: 200
+INFO     API_Framework:test_api_all_requests.py:30 Extracting access token from response
+INFO     API_Framework:test_api_all_requests.py:36 Access token successfully retrieved
+INFO     API_Framework:test_api_all_requests.py:48 Sending GET request to status endpoint
+INFO     API_Framework:test_api_all_requests.py:52 Response status code: 200
+INFO     API_Framework:test_api_all_requests.py:56 Validating response contains 'OPERATIONAL'
+INFO     API_Framework:test_api_all_requests.py:59 Status API validation successful
+INFO     API_Framework:test_api_all_requests.py:76 Sending POST request to register endpoint
+INFO     API_Framework:test_api_all_requests.py:79 Response status code: 400
+WARNING  API_Framework:test_api_all_requests.py:85 User registration failed
+INFO     API_Framework:test_api_all_requests.py:99 Sending GET request to goals endpoint
+INFO     API_Framework:test_api_all_requests.py:103 Response status code: 200
+INFO     API_Framework:test_api_all_requests.py:107 Validating all goals have a title
+INFO     API_Framework:test_api_all_requests.py:112 All goals validated successfully
+INFO     API_Framework:test_api_all_requests.py:131 Sending POST request to create a new goal
+INFO     API_Framework:test_api_all_requests.py:134 Response status code: 201
+INFO     API_Framework:test_api_all_requests.py:137 Validating response contains required fields
+INFO     API_Framework:test_api_all_requests.py:140 Goal created successfully
+INFO     API_Framework:test_api_all_requests.py:154 Sending GET request to retrieve goal with ID: 67e76b4186d5b4933c143b7e
+INFO     API_Framework:test_api_all_requests.py:157 Response status code: 200
+INFO     API_Framework:test_api_all_requests.py:160 Validating goal contains required fields
+INFO     API_Framework:test_api_all_requests.py:166 Goal validation successful
+INFO     API_Framework:test_api_all_requests.py:186 Sending PATCH request to update goal with ID: 67e76b4186d5b4933c143b7e
+INFO     API_Framework:test_api_all_requests.py:189 Response status code: 200
+INFO     API_Framework:test_api_all_requests.py:191 Goal updated successfully
+INFO     API_Framework:test_api_all_requests.py:204 Sending GET request to show progress endpoint
+INFO     API_Framework:test_api_all_requests.py:207 Response status code: 200
+INFO     API_Framework:test_api_all_requests.py:209 Progress information retrieved successfully
